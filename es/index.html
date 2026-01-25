@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Auto Servicio | Mobile Auto Repair | West Palm Beach y áreas cercanas</title>
+
+  <meta name="description" content="Mecánica móvil en West Palm Beach y áreas cercanas. Frenos, cambios de aceite, diagnóstico, baterías, A/C, suspensión y emergencias 24/7. Técnico certificado ASE. Llame al +1 (561) 847-1169." />
+  <meta name="keywords" content="mobile mechanic, auto repair, West Palm Beach, brakes, oil change, diagnostics, battery, alternator, A/C, suspension, emergency roadside" />
+  <meta name="author" content="Angel Rivero" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://seaautoservice.com/es/index.html" />
+  <link rel="alternate" hreflang="en" href="https://seaautoservice.com/en/index.html" />
+  <link rel="alternate" hreflang="es" href="https://seaautoservice.com/es/index.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sea Auto Servicio | Mobile Auto Repair | West Palm Beach y áreas cercanas" />
+  <meta property="og:description" content="Mecánica móvil en West Palm Beach y áreas cercanas. Frenos, cambios de aceite, diagnóstico, baterías, A/C, suspensión y emergencias 24/7. Técnico certificado ASE. Llame al +1 (561) 847-1169." />
+  <meta property="og:url" content="https://seaautoservice.com/es/index.html" />
+  <meta property="og:image" content="https://seaautoservice.com/assets/images/logo-es.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#FF6600" />
+
+  <link rel="icon" href="../assets/images/logo-es.png" />
+
+  <!-- Tailwind CDN (static site friendly) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#FF6600',
+            ink: '#FFFFFF'
+          }
+        }
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "AutoRepair", "name": "Sea Auto Servicio", "url": "https://seaautoservice.com/es/index.html", "telephone": "+1 (561) 847-1169", "email": "info@seaautoservice.com", "areaServed": "West Palm Beach y áreas cercanas", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "19:00"}], "description": "Mecánica móvil en West Palm Beach y áreas cercanas. Frenos, cambios de aceite, diagnóstico, baterías, A/C, suspensión y emergencias 24/7. Llame al +1 (561) 847-1169. Técnico certificado ASE.", "founder": "Angel Rivero", "serviceType": ["Mobile Auto Repair", "Emergency Roadside Service", "Diagnostics", "Brakes", "Maintenance", "A/C", "Suspension"], "hasCredential": "Técnico certificado ASE"}
+  </script>
+
+  <style>
+    
+  <style>
+    
+  <style>
+    /* clean dark background */
+    .mechanic-bg {
+      position: relative;
+      overflow-x: hidden;
+    }
+    .mechanic-bg::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(255,102,0,0.18), transparent 60%),
+        radial-gradient(900px 500px at 85% 20%, rgba(255,255,255,0.08), transparent 55%);
+    }
+    .card-dark {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+
+</head>
+
+
+</head>
+<body class="bg-black text-white antialiased mechanic-bg">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="../assets/images/logo-es.png" alt="Sea Auto Servicio logo" class="h-14 md:h-16 w-auto" />
+          <div class="leading-tight">
+            <div class="font-bold">Sea Auto Servicio</div>
+            <div class="text-xs text-white/60">West Palm Beach y áreas cercanas</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a class="hover:text-brand" href="#services">Servicios</a>
+          <a class="hover:text-brand" href="#about">Nosotros</a>
+          <a class="hover:text-brand" href="#area">Área</a>
+          <a class="hover:text-brand" href="#contact">Contacto</a>
+          <a class="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-brand text-white font-semibold hover:opacity-90" href="tel:+15618471169">Llamar</a>
+          <a class="text-white/70 hover:text-brand" href="../en/index.html">English</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-white/10" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2 text-sm">
+          <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="#services">Servicios</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="#about">Nosotros</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="#area">Área</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="#contact">Contacto</a>
+          <a class="px-3 py-2 rounded-lg bg-brand text-white font-semibold text-center" href="tel:+15618471169">Llamar ahora</a>
+          <a class="px-3 py-2 rounded-lg border border-white/10 text-center" href="../en/index.html">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/[0.04] to-transparent"></div>
+      <div class="max-w-6xl mx-auto px-4 py-14 md:py-20 relative">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand"></span>
+              <span class="text-white/70">Mecánico móvil</span>
+            </div>
+            <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">Servicio rápido, honesto y profesional</h1>
+            <p class="mt-4 text-lg text-white/70">Atendemos West Palm Beach y áreas cercanas. Servicio general Lun–Vie, y emergencias 24/7.</p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="tel:+15618471169" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand text-white font-semibold hover:opacity-90">
+                Llamar ahora — +1 (561) 847-1169
+              </a>
+              <a href="#services" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-white/20 font-semibold hover:bg-white/5">
+                Ver servicios
+              </a>
+            </div>
+            <div class="mt-4 flex items-center gap-3">
+              <img src="../assets/images/ase-certified.png" alt="Certificado ASE" class="h-16 md:h-20 w-auto rounded-xl bg-white p-3"/>
+              <div class="text-sm text-white/70">Certificado ASE</div>
+            </div>
+
+
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+              <div class="p-4 rounded-xl border border-white/10">
+                <div class="font-semibold">Diagnóstico y reparación • Certificado ASE</div>
+                <div class="text-white/60">Mecánico: Angel Rivero</div>
+              </div>
+              <div class="p-4 rounded-xl border border-white/10">
+                <div class="font-semibold">Servicio a domicilio</div>
+                <div class="text-white/60">West Palm Beach y áreas cercanas</div>
+              </div>
+              <div class="p-4 rounded-xl border border-white/10">
+                <div class="font-semibold">Emergencias 24/7</div>
+                <div class="text-white/60">Horario: Lunes–Viernes 8:00am–7:00pm (Servicio general) • Emergencias 24/7</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 md:p-8 rounded-2xl card-dark shadow-sm">
+            <h2 class="text-xl font-bold">Contacto</h2>
+            <p class="mt-1 text-white/70">Llame o envíe un mensaje. Respuesta rápida.</p>
+
+            <div class="mt-5 grid gap-3">
+              <a href="tel:+15618471169" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/15">
+                <div>
+                  <div class="text-xs text-white/60">Teléfono</div>
+                  <div class="font-semibold">+1 (561) 847-1169</div>
+                </div>
+                <span class="text-brand font-semibold">Llamar</span>
+              </a>
+
+              <a href="mailto:info@seaautoservice.com" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/15">
+                <div>
+                  <div class="text-xs text-white/60">Email</div>
+                  <div class="font-semibold">info@seaautoservice.com</div>
+                </div>
+                <span class="text-brand font-semibold">Email</span>
+              </a>
+
+              <div class="p-4 rounded-xl border border-white/10">
+                <div class="text-xs text-white/60">Horario</div>
+                <div class="font-semibold mt-1">Lunes–Viernes 8:00am–7:00pm (Servicio general) • Emergencias 24/7</div>
+              </div>
+            </div>
+
+            <div class="mt-5 text-xs text-white/50">
+              Servicio móvil. Solo con cita.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-3xl font-extrabold">Servicios</h2>
+            <p class="mt-2 text-white/70">Trabajo claro y precios justos. Si no ve su reparación aquí, pregunte.</p>
+          </div>
+          <a href="tel:+15618471169" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-brand text-white font-semibold hover:opacity-90">
+            Llamar ahora
+          </a>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Frenos</div>
+            <div class="mt-2 text-sm text-white/70">Pastillas, rotores, líquido de frenos e inspección.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Cambio de aceite y mantenimiento</div>
+            <div class="mt-2 text-sm text-white/70">Servicio de aceite, filtros y revisiones preventivas.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Batería y sistema de carga</div>
+            <div class="mt-2 text-sm text-white/70">Pruebas de batería/alternador y reemplazo.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Diagnóstico y Check Engine</div>
+            <div class="mt-2 text-sm text-white/70">Escaneo, pruebas y diagnóstico claro.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Suspensión y dirección</div>
+            <div class="mt-2 text-sm text-white/70">Amortiguadores, rótulas, links, alineación recomendada.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">A/C y enfriamiento</div>
+            <div class="mt-2 text-sm text-white/70">Revisión de A/C, fugas, termostato, radiador.</div>
+          </div>
+          
+          <div class="p-5 rounded-2xl border border-white/10 hover:shadow-sm transition">
+            <div class="font-bold">Servicio de emergencia</div>
+            <div class="mt-2 text-sm text-white/70">Arranque, no-start, sobrecalentamiento, reparaciones rápidas.</div>
+          </div>
+          
+        </div>
+
+        <div class="mt-8 p-5 rounded-2xl card-dark">
+          <div class="font-semibold">¿No ve su reparación?</div>
+          <div class="text-white/70 mt-1">Llámenos y díganos qué necesita. Le diremos si podemos ayudarle.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 class="text-3xl font-extrabold">Sobre nosotros</h2>
+            <p class="mt-3 text-white/70 leading-relaxed">Hola, soy Angel Rivero. En Sea Auto Servicio ofrecemos reparación automotriz móvil con enfoque en calidad, seguridad y comunicación. Soy técnico certificado ASE. Nuestro objetivo es que vuelva a la carretera rápido—con confianza.</p>
+            <div class="mt-6 p-5 rounded-2xl card-dark flex items-center gap-4">
+              <img src="../assets/images/ase-certified.png" alt="Certificado ASE" class="h-20 md:h-24 w-auto rounded-xl bg-white p-3"/>
+              <div>
+                <div class="font-bold">Técnico certificado ASE</div>
+                <div class="text-white/70 text-sm">Certificación reconocida en la industria para reparación automotriz profesional.</div>
+              </div>
+            </div>
+
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="p-5 rounded-2xl border border-white/10">
+                <div class="text-xs text-white/60">Mecánico</div>
+                <div class="font-bold mt-1">Angel Rivero</div>
+              </div>
+              <div class="p-5 rounded-2xl border border-white/10">
+                <div class="text-xs text-white/60">Área</div>
+                <div class="font-bold mt-1">West Palm Beach y áreas cercanas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl card-dark">
+            <div class="font-bold">¿Por qué elegirnos?</div>
+            <ul class="mt-3 grid gap-2 text-white/70">
+              <li>• Comunicación clara y honesta.</li>
+              <li>• Reparación y diagnóstico con enfoque en seguridad.</li>
+              <li>• Ahorre tiempo: vamos a su ubicación.</li>
+              <li>• Emergencias 24/7 disponibles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area + Map -->
+    <section id="area" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-3xl font-extrabold">Área de servicio</h2>
+        <p class="mt-2 text-white/70">Atendemos West Palm Beach y áreas cercanas. Para emergencias, salimos cualquier día y hora.</p>
+
+        <div class="mt-6 grid lg:grid-cols-2 gap-6 items-start">
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black">
+            <iframe
+              title="Sea Auto Service Area Map"
+              src="https://www.google.com/maps?q=West+Palm+Beach,+FL&output=embed"
+              width="100%"
+              height="420"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-white/10">
+            <div class="font-bold">Área principal</div>
+            <p class="mt-2 text-white/70">West Palm Beach y áreas cercanas</p>
+
+            <div class="mt-4 font-bold">Horario</div>
+            <p class="mt-2 text-white/70">Lunes–Viernes 8:00am–7:00pm (Servicio general) • Emergencias 24/7</p>
+
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a href="tel:+15618471169" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand text-white font-semibold hover:opacity-90">
+                Llamar ahora
+              </a>
+              <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-white/20 font-semibold hover:bg-white/5">
+                Contacto
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-4 text-xs text-white/50">
+          El mapa muestra el centro del área de servicio (West Palm Beach). Las visitas dependen de distancia y disponibilidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 class="text-3xl font-extrabold">Contacto</h2>
+            <p class="mt-2 text-white/70">Llame o envíe un mensaje. Respuesta rápida.</p>
+
+            <div class="mt-6 grid gap-3">
+              <a href="tel:+15618471169" class="p-5 rounded-2xl border border-white/10 hover:bg-white/5 transition">
+                <div class="text-xs text-white/60">Teléfono</div>
+                <div class="mt-1 text-xl font-extrabold">+1 (561) 847-1169</div>
+                <div class="mt-2 text-sm text-brand font-semibold">Llamar</div>
+              </a>
+
+              <a href="mailto:info@seaautoservice.com" class="p-5 rounded-2xl border border-white/10 hover:bg-white/5 transition">
+                <div class="text-xs text-white/60">Email</div>
+                <div class="mt-1 text-xl font-extrabold">info@seaautoservice.com</div>
+                <div class="mt-2 text-sm text-brand font-semibold">Email</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl card-dark">
+            <div class="font-bold">Información rápida</div>
+            <dl class="mt-4 grid gap-3 text-sm">
+              <div>
+                <dt class="text-white/60">Mecánico</dt>
+                <dd class="font-semibold">Angel Rivero</dd>
+              </div>
+              <div>
+                <dt class="text-white/60">Área de servicio</dt>
+                <dd class="font-semibold">West Palm Beach y áreas cercanas</dd>
+              </div>
+              <div>
+                <dt class="text-white/60">Horario</dt>
+                <dd class="font-semibold">Lunes–Viernes 8:00am–7:00pm (Servicio general) • Emergencias 24/7</dd>
+              </div>
+            </dl>
+
+            <div class="mt-6 text-xs text-white/60">
+              Consejo: En emergencias, llame directamente para respuesta más rápida.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="../assets/images/logo-es.png" alt="Sea Auto Servicio logo" class="h-14 md:h-16 w-auto" />
+          <div>
+            <div class="font-bold">Sea Auto Servicio</div>
+            <div class="text-xs text-white/60">West Palm Beach y áreas cercanas</div>
+          </div>
+        </div>
+        <div class="text-sm text-white/60">
+          © <span id="year"></span> Sea Auto Servicio. Servicio móvil. Solo con cita.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Auto Service</title>
+  <script>
+    const lang = navigator.language || navigator.userLanguage || 'en';
+    if (lang.toLowerCase().startsWith('es')) {
+      // Relative paths so the site also works when hosted in a subfolder
+      // and when opened locally for testing.
+      window.location.replace('es/index.html');
+    } else {
+      window.location.replace('en/index.html');
+    }
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Select language:</p>
+    <p><a href="en/index.html">English</a> | <a href="es/index.html">Español</a></p>
+  </noscript>
+</body>
+</html>
